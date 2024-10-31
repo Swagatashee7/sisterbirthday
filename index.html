@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Suchismita!</title>
+  <style>
+    /* Base styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #FFDDC1, #FF9AA2, #FFDAC1, #FFACAC);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      color: #d43f3a;
+      margin-top: 20px;
+      padding-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #fff;
+      text-shadow: 0 0 5px #FF5733, 0 0 10px #FFC300, 0 0 15px #DAF7A6;
+      animation: pulse 2s infinite;
+      margin: 0;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    nav a {
+      color: #d43f3a;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #FF9AA2;
+    }
+
+    section {
+      padding: 40px;
+      margin: 20px auto;
+      max-width: 90%;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: none;
+    }
+
+    .section-title {
+      font-size: 2em;
+      color: #d43f3a;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #FFDDC1;
+    }
+
+    /* Centered images with 50% screen width */
+    .section-images img {
+      width: 50%; /* Set to 50% of the screen width */
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+
+    /* Rotating images in Irreplaceable section */
+    .fullscreen-gallery {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .fullscreen-gallery img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .fullscreen-gallery img.active {
+      opacity: 1;
+    } 
+
+    /* Balloon Styles */
+    .balloon {
+      position: absolute;
+      bottom: -100px;
+      width: 50px;
+      height: 70px;
+      background-color: #FF5E78;
+      border-radius: 50% 50% 45% 45%;
+      transform-origin: bottom center;
+      animation: float 5s infinite ease-in-out;
+    }
+    .balloon:nth-child(2) { background-color: #FFC233; left: 20%; animation-delay: 1s; }
+    .balloon:nth-child(3) { background-color: #59C9FF; left: 50%; animation-delay: 2s; }
+    .balloon:nth-child(4) { background-color: #FF9AE3; left: 80%; animation-delay: 3s; }
+    .balloon:before {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      width: 2px;
+      height: 30px;
+      background-color: #333;
+    }
+
+    /* Floating animation for balloons */
+    @keyframes float {
+      0% { transform: translateY(0) rotate(5deg); opacity: 1; }
+      50% { transform: translateY(-500px) rotate(-5deg); opacity: 1; }
+      100% { transform: translateY(-700px) rotate(5deg); opacity: 0; }
+    }
+
+    /* Cracker Burst */
+    .cracker {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      background-color: #FFC300;
+      border-radius: 50%;
+      animation: burst 0.5s ease-out forwards;
+    }
+
+    /* Cracker burst animation */
+    @keyframes burst {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(5); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Happy Birthday, Suchismita!</h1>
+  <p>From your lucky brother, Swagata</p>
+  <nav>
+    <a href="javascript:void(0)" onclick="showSection('home')">Home</a>
+    <a href="javascript:void(0)" onclick="showSection('irreplaceable')">Irreplaceable</a>
+    <a href="javascript:void(0)" onclick="showSection('my-wishes')">My Wishes</a>
+    <a href="javascript:void(0)" onclick="showSection('memory-line')">Our Memory Line</a>
+    <a href="javascript:void(0)" onclick="showSection('best-memories')">Best Memories</a>
+    <a href="javascript:void(0)" onclick="showSection('songs')">Songs</a>
+    <a href="javascript:void(0)" onclick="showSection('surprise')">Surprise</a>
+  </nav>
+</header>
+<div class="balloon" style="left: 10%;"></div>
+<div class="balloon" style="left: 30%;"></div>
+<div class="balloon" style="left: 50%;"></div>
+<div class="balloon" style="left: 70%;"></div>
+<div class="balloon" style="left: 90%;"></div>
+
+<div class="cracker" style="top: 30%; left: 40%;"></div>
+<div class="cracker" style="top: 50%; left: 60%;"></div>
+<div class="cracker" style="top: 70%; left: 30%;"></div>
+<div class="cracker" style="top: 90%; left: 80%;"></div>
+
+
+
+<section id="home" class="section-content">
+  <h2 class="section-title">Home</h2>
+  <p>"Suchismita, happiest 25th! You are someone in my life who is truly ineffable. Honestly, I can’t find any words that genuinely describe how incredible you are. I hardly know anyone as tenacious as you.</p>
+</section>
+
+<section id="irreplaceable" class="section-content fullscreen-gallery">
+  <h2 class="section-title">Irreplaceable</h2>
+  <img src="1.1.jpg" alt="Image 1" class="rotating-image active">
+  <img src="2.jpg" alt="Image 2" class="rotating-image">
+  <img src="3.webp" alt="Image 3" class="rotating-image">
+  <img src="4.png" alt="Image 4" class="rotating-image">
+  <img src="5.png" alt="Image 5" class="rotating-image">
+ <img src="6.png" alt="Image 5" class="rotating-image">
+ <img src="7.png" alt="Image 5" class="rotating-image">
+ <img src="8.png" alt="Image 5" class="rotating-image">
+ <img src="9.png" alt="Image 5" class="rotating-image">
+ <img src="10.png" alt="Image 5" class="rotating-image">
+</section>
+
+<section id="my-wishes" class="section-content">
+  <h2 class="section-title">My Wishes</h2>
+  <p>Dear Suchismita,"I wish for all the good things to happen to you. I hope you get everything you've wished for. I wish for you to stay like an angel in my life, always, until the end. I wish you all the love and happiness. I wish I could take away some of your stress and sadness to help you feel relieved and happy. I wish I had two more eyes just to see you smile more"..</p>
+</section>
+
+<!-- Adjusted Memory Line section -->
+<section id="memory-line" class="section-content">
+  <h2 class="section-title">Our Memory Line</h2>
+  <p><strong>First Day:</strong>i still remember that day after college,i felt one are a normal junior just like others...</p>
+  <p><strong>Now:</strong> "You are more than just a friend; you are even more than family to me. To be honest, it's true that the amount of love, affection, and guidance you've given me is something I don’t think even my own sister would have done if I had one."
+
+
+
+
+
+
+.</p>
+  <div class="section-images">
+    <img src="lin1.jpg" alt="Memory Line Image 1">
+ <p><strong> 2/11/2021:</strong>
+    <img src="lin2.jpg" alt="Memory Line Image 2">
+ <p><strong> 9/10/2022:</strong>
+    <img src="lin3.jpg" alt="Memory Line Image 3">
+ <p><strong> 18/5/2024:</strong>
+  </div>
+</section>
+
+<!-- Adjusted Best Memories section -->
+<section id="best-memories" class="section-content">
+  <h2 class="section-title">Best Memories</h2>
+   <p><strong> Here are the top 3 Indelible memories, Though i have infinity space left to put here as memories :</strong>
+  <div class="section-images">
+ <p><strong> 14/2/2024:</strong>
+    <img src="now.webp" alt="Best Memory 1">
+ <p><strong> 27/12/2023:</strong>
+    <img src="memory2.webp" alt="Best Memory 2">
+  <p><strong> 11/2/2024:</strong>
+    <img src="memo3.webp" alt="Best Memory 3">
+  </div>
+</section>
+
+<section id="songs" class="section-content">
+  <h2 class="section-title">Songs</h2>
+  <div class="song-list">
+    <p>Here are my top 3 songs dedicated to you:</p>
+    <button onclick="togglePlayPause(this, '1song.mp3')">Play Song 1</button>
+    <button onclick="togglePlayPause(this, '2song.mp3')">Play Song 2</button>
+    <button onclick="togglePlayPause(this, '3song.mp3')">Play Song 3</button>
+  </div>
+</section>
+
+<section id="surprise" class="section-content">
+  <h2 class="section-title">Surprise</h2>
+  <p>Here's a special surprise just for you!</p>
+  <video controls width="80%" style="display: block; margin: 0 auto;">
+    <source src="hehe.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<footer>
+  <p>With all my love, Swagata.</p>
+</footer>
+
+<script>
+  function showSection(sectionId) {
+    const sections = document.querySelectorAll('.section-content');
+    sections.forEach(section => section.style.display = 'none');
+    document.getElementById(sectionId).style.display = 'block';
+  }
+
+  document.addEventListener("DOMContentLoaded", () => showSection('home'));
+
+  // Rotating images in Irreplaceable section
+  let currentIndex = 0;
+  const rotatingImages = document.querySelectorAll('.fullscreen-gallery .rotating-image');
+
+  function rotateImages() {
+    rotatingImages[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % rotatingImages.length;
+    rotatingImages[currentIndex].classList.add('active');
+  }
+
+  setInterval(rotateImages, 3000);
+
+  // Audio play/pause toggle function for songs
+  let currentAudio = null;
+
+  function togglePlayPause(button, songUrl) {
+    if (currentAudio && !currentAudio.paused && currentAudio.src.includes(songUrl)) {
+      currentAudio.pause();
+      button.textContent = `Play ${button.textContent.slice(6)}`;
+    } else {
+      if (currentAudio) currentAudio.pause();
+      currentAudio = new Audio(songUrl);
+      currentAudio.play();
+      button.textContent = `Pause ${button.textContent.slice(5)}`;
+    }
+
+    currentAudio.onended = () => {
+      button.textContent = `Play ${button.textContent.slice(6)}`;
+    };
+  }
+</script>
+
+</body>
+</html>
